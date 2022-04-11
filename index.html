@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>JS_CARD-GAME</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="image/cards_50px.png" alt="" style="filter: #8C5634;">
+                <h2>J-COMMAND</h2>
+            <img src="image/ace_of_spades_50px.png" alt="" style="filter: #8C5634;">
+        </div>
+        <div class="message_bar"></div>
+        <div class="game_zone">
+           <div class="bank">
+               <span class="num_cards">52</span>
+           </div>
+           <div class="table_jeux">
+            <div class="your_card C1" data-value="9♠️">♠️</div>
+           </div>
+            <div id="card_selected">
+                <div class="your_cards">
+                <!-- <img src="image/Card_1.jpg" alt="J&hearts;" class="your_card C1">
+                <img src="image/Card_1.jpg" alt="J&hearts;" class="your_card C2">
+                <img src="image/Card_1.jpg" alt="J&hearts;" class="your_card C3">
+                <img src="image/Card_1.jpg" alt="J&hearts;" class="your_card C4"> -->
+                <div class="your_card C1" data-value="9♠️">♠️</div>
+                <div class="your_card C2" data-value="8♥️" style="color:red;">♥️</div>
+                <div class="your_card C3" style="color: red;" data-value="7♦️">♦️</div>
+                <div class="your_card C4" data-value="5♣️">♣️</div>
+            </div>
+        </div>
+        </div>
+        <div class="player_zone"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

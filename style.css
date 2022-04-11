@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+}   
+.container{
+    width: 100vw;
+    height: 100vh;
+   
+
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 65px  1fr;
+
+    gap: 5px;
+    box-sizing: border-box;
+
+    background-image: url(image/esteban-lopez-liEV4NUf2qU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container div {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.header{
+    padding: 5px;
+    border-radius: 0 ;
+    grid-column:1 / span 4 ;
+
+    background-image: url(image/mockup-photos-5nUNdLueQio-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #8C5634;
+    display : flex;
+    align-content: center;
+}
+.header > img {
+    filter: invert(34%) sepia(34%) saturate(6765%) hue-rotate(241deg) brightness(98%) contrast(94%);
+}
+.message_bar{
+    grid-column: 1 / span 4;
+    width: 90%;
+    position: relative;
+    left: 4.5%;
+
+    background-image: url(image/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.game_zone {
+    opacity: 0.96;
+    grid-column: 1 / span 3;
+    position: relative;
+    gap: 5px;
+    display: grid;
+    /* display: flex; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 120px 1fr;
+    justify-content: center;
+    background-image: url(image/JCmmd_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game_zone div{
+    border-radius: 0;
+}
+.bank {
+    width: 81px;
+    height: 113px;
+    background-image: url(image/Card_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    grid-row: 2/span 2;
+    grid-column: 1 / span 1;
+    place-self: center;
+    /* bottom: 50%; */
+    left: 10%;
+    cursor: pointer;
+    color: coral;
+    font-size: 20%;
+}
+.table_jeux {
+    grid-column: 2/span 2;
+    grid-row: 2 / span 1;
+    filter: invert(34%) sepia(34%) saturate(6765%) hue-rotate(241deg) brightness(98%) contrast(94%);
+     ;
+}
+.player_zone{
+    background-image: url(image/Players_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.your_card{
+    margin: 8px;
+}
+#card_selected {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 2;
+    overflow-x: auto;
+    width: 90%;
+    max-width: 100%;
+    box-shadow: -2px 20px 20px 20px #191918;
+}
+#card_selected::-webkit-scrollbar {
+    width : 3px;
+}
+#card_selected::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: coral;
+}
+   
+.your_cards {
+    /* justify-content: space-between; */
+    display: grid;
+    grid-auto-columns: 15%;
+    grid-auto-flow: column;
+    max-width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: visible;
+    height: 90%;
+}
+.your_card {
+    position: relative;
+    width: 50px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #e2dbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.your_card::before,
+.your_card::after{
+    position : absolute;
+    content : attr(data-value); 
+    font-size : 1rem;
+}
+.your_card::after{
+    bottom : 0;
+    right  : 1px;
+    transform : rotate(180deg);
+}
+.your_card::before{
+    top:0;
+    left : 1px;
+    
+}
+ /* ::-webkit-scrollbar{
+    width: 10px;
+} */    
+ 
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-slider-thumb{
+    background: saddlebrown;
+    border-radius: 5px;
+}  */
